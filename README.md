@@ -1,19 +1,20 @@
 # ✨ StarsUnited – Gaming Community Website
 
-Willkommen im offiziellen Repository der **StarsUnited Gaming Community**!
+Willkommen im offiziellen Repository der **StarsUnited Gaming Community**!  
 Diese Website präsentiert unsere Community, Spiele, Teams, Events und Kontaktmöglichkeiten in einem modernen, animierten und responsiven Design.
 
 ---
 
 ## 🚀 Features
 
-✅ **Modernes, animiertes UI** – Starfield-Background, animierte Buttons, weiche Übergänge
-✅ **Komplett responsive** – funktioniert auf Desktop, Tablet und Smartphone
-✅ **Dynamische Team-Sektion** – Teams werden automatisch über JavaScript generiert
-✅ **Smooth Scrolling** – angenehme Navigation auf der ganzen Seite
-✅ **Filterfunktion** – Teams können nach Spiel gefiltert werden
-✅ **Modernes Farbschema** – Dunkles Galaxy-Design mit Gold- und Blautönen
-✅ **GitHub Pages kompatibel** – ideal für statisches Hosting
+✅ Modernes, animiertes UI (Starfield-Background, Hover-Animationen)  
+✅ Komplett responsive für Desktop, Tablet und Smartphone  
+✅ Dynamische Team-Sektion (automatisch generiert über JavaScript)  
+✅ Filterfunktion für Teams  
+✅ Smooth Scrolling  
+✅ Dunkles Galaxy-Farbschema  
+✅ Eigenständige rechtliche Seiten (Impressum, Privacy, Terms)  
+✅ 100 % kompatibel mit GitHub Pages  
 
 ---
 
@@ -21,56 +22,64 @@ Diese Website präsentiert unsere Community, Spiele, Teams, Events und Kontaktm�
 
 ```
 / (root)
-│ index.html          # Hauptseite
-│ styles.css          # globales CSS
-│ script.js           # Interaktive Logik & dynamische Team-Erzeugung
-│ README.md           # Projektdokumentation
+│ index.html # Hauptseite
+│ impressum.html # Impressum
+│ privacy.html # Datenschutzerklärung
+│ terms.html # Nutzungsbedingungen
+│ styles.css # Globales CSS
+│ script.js # Interaktive Logik & Team-System
+│ README.md # Projektdokumentation
 ```
 
-> ✅ Hinweis: In der GitHub Pages Version müssen alle Dateien im **Root-Verzeichnis**.
+
+> Hinweis: Für GitHub Pages müssen alle Dateien im **Root-Verzeichnis** liegen.
 
 ---
 
 ## 🔧 Technologien
 
-* **HTML5**
-* **CSS3** (modern, responsive, animiert)
-* **JavaScript ES6**
-* Deployment über **GitHub Pages**
-* Optional: **CI/CD Pipeline**
+- HTML5
+- CSS3 (Responsive + Animationen)
+- JavaScript (ES6)
+- Deployment über GitHub Pages
 
 ---
 
-## 🌐 Deployment
+## 🌐 Deployment (GitHub Pages)
 
-Die Seite wird automatisch über **GitHub Pages** veröffentlicht.
-
-### ✅ GitHub Pages aktivieren:
-
-1. Repository → **Settings**
+1. Repository öffnen → **Settings**
 2. Links: **Pages**
 3. Source: **Deploy from branch**
 4. Branch: **main**
-5. Ordner: **/** (Root Directory)
+5. Directory: **/** (Root-Verzeichnis)
 
-Danach ist deine Seite erreichbar unter:
+Danach ist die Website erreichbar unter:
 
 ```
 https://<username>.github.io/<repository>/
 ```
 
-## [👥 StarsUnited Community](https://starsunited.github.io/starsunited/)
+## 🔗 Wichtige Links
 
-Besuche unseren Discord:
+🌐 **Live Website**  
+https://starsunited.github.io/starsunited/
 
-👉 [Discord](https://discord.gg/kEqdsF3UBM)
+📜 **Impressum**  
+/impressum.html
 
-Wir freuen uns auf dich! ✨
+🔐 **Privacy (Datenschutzerklärung)**  
+/privacy.html
+
+📄 **Terms (Nutzungsbedingungen)**  
+/terms.html
+
+💬 **Discord Community**  
+https://discord.gg/kEqdsF3UBM
 
 ---
 
 ## 📄 Lizenz
 
-Dieses Projekt ist privat und nicht zur öffentlichen Nutzung, Weitergabe oder Veränderung freigegeben.
-Jegliche Nutzung, Vervielfältigung oder Weitergabe des Codes ist ohne ausdrückliche schriftliche Erlaubnis des Eigentümers verboten.
+Dieses Projekt ist privat und nicht zur öffentlichen Nutzung, Verbreitung oder Veränderung freigegeben.  
+Jegliche Nutzung, Kopie oder Weitergabe des Quellcodes ist ohne ausdrückliche schriftliche Erlaubnis untersagt.
 
