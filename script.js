@@ -74,12 +74,18 @@ const teamsData = [
   }
 ];
 
-// Create Starfield
-function createStarfield() {
+const defaultStats = {
+  members: 500,
+  games: 10
+};
+
+function createEnhancedStarfield() {
   const starfieldContainer = document.getElementById('starfield');
   if (!starfieldContainer) return;
 
-  const starCount = 150;
+  const isMobile = window.innerWidth < 768;
+  const starCount = isMobile ? 80 : 150;
+
   for (let i = 0; i < starCount; i++) {
     const star = document.createElement('div');
     star.className = 'star';
@@ -89,11 +95,71 @@ function createStarfield() {
     star.style.top = Math.random() * 100 + '%';
     star.style.animationDelay = Math.random() * 3 + 's';
     star.style.animationDuration = Math.random() * 2 + 2 + 's';
+    star.style.opacity = Math.random() * 0.7 + 0.3;
+
     starfieldContainer.appendChild(star);
+  }
+
+  if (!isMobile) {
+    setInterval(() => {
+      createShootingStar();
+    }, 3000 + Math.random() * 4000);
   }
 }
 
-// Render Teams
+function createShootingStar() {
+  const starfieldContainer = document.getElementById('starfield');
+  if (!starfieldContainer) return;
+
+  const shootingStar = document.createElement('div');
+  shootingStar.className = 'shooting-star';
+  shootingStar.style.left = Math.random() * 100 + '%';
+  shootingStar.style.top = Math.random() * 50 + '%';
+  shootingStar.style.transform = `rotate(${Math.random() * 45 - 22.5}deg)`;
+
+  starfieldContainer.appendChild(shootingStar);
+
+  setTimeout(() => shootingStar.remove(), 2000);
+}
+
+async function loadStatistics() {
+  try {
+    const stats = defaultStats;
+
+    const memberElement = document.getElementById('memberCount');
+    const gameElement = document.getElementById('gameCount');
+
+    if (memberElement) memberElement.textContent = stats.members + '+';
+    if (gameElement) gameElement.textContent = stats.games + '+';
+  } catch (error) {
+    console.error('Error loading statistics:', error);
+  }
+}
+
+function setupScrollAnimations() {
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -100px 0px'
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll('.fade-in-up, .fade-in-left, .fade-in-right').forEach((el) => {
+    observer.observe(el);
+  });
+
+  document.querySelectorAll('.feature-card, .game-card, .benefit-card, .contact-card').forEach((el) => {
+    el.classList.add('fade-in-up');
+    observer.observe(el);
+  });
+}
+
 function renderTeams(filter = 'all') {
   const teamsGrid = document.getElementById('teamsGrid');
   if (!teamsGrid) return;
@@ -138,9 +204,10 @@ function renderTeams(filter = 'all') {
       </div>
     </div>
   `).join('');
+
+  setupScrollAnimations();
 }
 
-// Filter Teams
 function setupTeamFilters() {
   const filterButtons = document.querySelectorAll('.filter-btn');
   filterButtons.forEach(button => {
@@ -148,58 +215,123 @@ function setupTeamFilters() {
       filterButtons.forEach(btn => btn.classList.remove('active'));
       button.classList.add('active');
       const filter = button.dataset.filter;
-      renderTeams(filter);
+
+      const teamsGrid = document.getElementById('teamsGrid');
+      const cards = teamsGrid.querySelectorAll('.team-card');
+
+      cards.forEach((card) => {
+        card.classList.add('hidden');
+      });
+
+      setTimeout(() => {
+        renderTeams(filter);
+      }, 150);
     });
   });
 }
 
-// Mobile Menu Toggle
 function setupMobileMenu() {
   const hamburger = document.getElementById('hamburger');
-  if (!hamburger) return;
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  if (!hamburger || !mobileMenu) return;
 
   hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
   });
 
-  // Close menu when clicking on a link
-  const navLinks = document.querySelectorAll('.nav-links a');
-  navLinks.forEach(link => {
+  mobileMenu.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       hamburger.classList.remove('active');
+      mobileMenu.classList.remove('active');
     });
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !mobileMenu.contains(e.target)) {
+      hamburger.classList.remove('active');
+      mobileMenu.classList.remove('active');
+    }
   });
 }
 
-// Smooth scroll for navigation
 function setupSmoothScroll() {
   const links = document.querySelectorAll('a[href^="#"]');
   links.forEach(link => {
     link.addEventListener('click', (e) => {
-      e.preventDefault();
-      const target = document.querySelector(link.getAttribute('href'));
-      if (target) {
-        target.scrollIntoView({ behavior: 'smooth' });
+      const href = link.getAttribute('href');
+      if (href !== '#' && href !== '#home') {
+        e.preventDefault();
+        const target = document.querySelector(href);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
       }
     });
   });
 }
 
-// Initialize everything
+function setupNavbarScroll() {
+  const navbar = document.querySelector('.navbar');
+  if (!navbar) return;
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      navbar.style.boxShadow = '0 4px 20px rgba(59, 130, 246, 0.1)';
+    } else {
+      navbar.style.boxShadow = 'none';
+    }
+  });
+}
+
+function setupGameCardFlips() {
+  const gameCards = document.querySelectorAll('.game-card-flip');
+
+  gameCards.forEach(card => {
+    card.addEventListener('click', (e) => {
+      if (!e.target.closest('.btn-discord')) {
+        card.classList.toggle('flipped');
+      }
+    });
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
-  createStarfield();
+  createEnhancedStarfield();
+  loadStatistics();
   renderTeams();
   setupTeamFilters();
   setupMobileMenu();
   setupSmoothScroll();
+  setupNavbarScroll();
+  setupScrollAnimations();
+  setupGameCardFlips();
+
+  document.querySelectorAll('section').forEach((section) => {
+    const heading = section.querySelector('h2');
+    const subtitle = section.querySelector('.section-subtitle');
+
+    if (heading) {
+      heading.classList.add('fade-in-up');
+    }
+    if (subtitle) {
+      subtitle.classList.add('fade-in-up');
+    }
+  });
+
+  setupScrollAnimations();
 });
 
-// Scroll to top navbar styling
-window.addEventListener('scroll', () => {
-  const navbar = document.querySelector('.navbar');
-  if (window.scrollY > 50) {
-    navbar.style.boxShadow = '0 4px 20px rgba(59, 130, 246, 0.1)';
-  } else {
-    navbar.style.boxShadow = 'none';
+window.addEventListener('resize', () => {
+  const starfield = document.getElementById('starfield');
+  if (starfield) {
+    const wasLarge = starfield.children.length > 100;
+    const isLarge = window.innerWidth >= 768;
+
+    if (wasLarge !== isLarge) {
+      starfield.innerHTML = '';
+      createEnhancedStarfield();
+    }
   }
 });
