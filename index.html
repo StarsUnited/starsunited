@@ -1,4 +1,3 @@
-<!-- Head -->
 <!doctype html>
 <html lang="de">
 <head>
@@ -7,7 +6,6 @@
   <title>StarsUnited - Gaming Community</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<!-- Body -->
 <body>
   <div id="starfield" class="starfield"></div>
 
@@ -24,6 +22,7 @@
         <li><a href="#teams">Teams</a></li>
         <li><a href="#community">Community</a></li>
         <li><a href="#contact">Kontakt</a></li>
+        <li><a href="#impressum">Impressum</a></li>
       </ul>
       <button class="hamburger" id="hamburger">
         <span></span>
@@ -32,6 +31,18 @@
       </button>
     </div>
   </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#home">Startseite</a></li>
+      <li><a href="#about">Über uns</a></li>
+      <li><a href="#games">Spiele & Projekte</a></li>
+      <li><a href="#teams">Teams</a></li>
+      <li><a href="#community">Community</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+      <li><a href="#impressum">Impressum</a></li>
+    </ul>
+  </div>
 
   <main>
     <!-- Hero Section -->
@@ -45,21 +56,21 @@
           Hier warten viele Spiele, neue Freunde und grenzenlose Möglichkeiten auf dich!
         </p>
         <div class="hero-buttons">
-          <a href="https://discord.gg/kEqdsF3UBM" class="btn btn-primary" target="_blank">
+          <a href="https://discord.gg/starsunited" class="btn btn-primary" target="_blank">
             Jetzt Discord beitreten →
           </a>
           <a href="#about" class="btn btn-secondary">Mehr erfahren</a>
         </div>
         <div class="hero-stats">
-          <div class="stat">
-            <div class="stat-number">500+</div>
+          <div class="stat fade-in-up">
+            <div class="stat-number" id="memberCount">500+</div>
             <div class="stat-label">Aktive Mitglieder</div>
           </div>
-          <div class="stat">
-            <div class="stat-number">10+</div>
+          <div class="stat fade-in-up">
+            <div class="stat-number" id="gameCount">10+</div>
             <div class="stat-label">Verschiedene Spiele</div>
           </div>
-          <div class="stat">
+          <div class="stat fade-in-up">
             <div class="stat-number">24/7</div>
             <div class="stat-label">Community Support</div>
           </div>
@@ -118,25 +129,65 @@
           Und das Beste: Wir erweitern unser Angebot ständig!
         </p>
         <div class="games-grid">
-          <div class="game-card">
-            <div class="game-icon" style="background: linear-gradient(135deg, #3B82F6, #1E40AF);">👑</div>
-            <h3>Clash Royale</h3>
-            <p>Strategische Kämpfe, Turniere und gemeinsame Clan-Events warten auf dich!</p>
+          <div class="game-card-flip" data-discord="https://discord.gg/starsunited">
+            <div class="game-card-inner">
+              <div class="game-card-front">
+                <div class="game-icon" style="background: linear-gradient(135deg, #3B82F6, #1E40AF);">👑</div>
+                <h3>Clash Royale</h3>
+                <p>Strategische Kämpfe, Turniere und gemeinsame Clan-Events warten auf dich!</p>
+              </div>
+              <div class="game-card-back">
+                <div class="discord-icon">💬</div>
+                <h3>Join our Discord!</h3>
+                <p>Werde Teil unserer Clash Royale Community</p>
+                <a href="https://discord.gg/starsunited" class="btn-discord" target="_blank">Jetzt beitreten</a>
+              </div>
+            </div>
           </div>
-          <div class="game-card">
-            <div class="game-icon" style="background: linear-gradient(135deg, #DC2626, #7F1D1D);">⚔️</div>
-            <h3>Clash of Clans</h3>
-            <p>Baue dein Dorf auf, kämpfe in Clan-Kriegen und werde Teil unserer starken Clans.</p>
+          <div class="game-card-flip" data-discord="https://discord.gg/starsunited">
+            <div class="game-card-inner">
+              <div class="game-card-front">
+                <div class="game-icon" style="background: linear-gradient(135deg, #DC2626, #7F1D1D);">⚔️</div>
+                <h3>Clash of Clans</h3>
+                <p>Baue dein Dorf auf, kämpfe in Clan-Kriegen und werde Teil unserer starken Clans.</p>
+              </div>
+              <div class="game-card-back">
+                <div class="discord-icon">💬</div>
+                <h3>Join our Discord!</h3>
+                <p>Werde Teil unserer Clash of Clans Community</p>
+                <a href="https://discord.gg/starsunited" class="btn-discord" target="_blank">Jetzt beitreten</a>
+              </div>
+            </div>
           </div>
-          <div class="game-card">
-            <div class="game-icon" style="background: linear-gradient(135deg, #F97316, #EA580C);">🏆</div>
-            <h3>E-Sports</h3>
-            <p>Nimm an kompetitiven Turnieren teil und messe dich mit den Besten!</p>
+          <div class="game-card-flip" data-discord="https://discord.gg/starsunited">
+            <div class="game-card-inner">
+              <div class="game-card-front">
+                <div class="game-icon" style="background: linear-gradient(135deg, #F97316, #EA580C);">🏆</div>
+                <h3>E-Sports</h3>
+                <p>Nimm an kompetitiven Turnieren teil und messe dich mit den Besten!</p>
+              </div>
+              <div class="game-card-back">
+                <div class="discord-icon">💬</div>
+                <h3>Join our Discord!</h3>
+                <p>Werde Teil unserer E-Sports Community</p>
+                <a href="https://discord.gg/starsunited" class="btn-discord" target="_blank">Jetzt beitreten</a>
+              </div>
+            </div>
           </div>
-          <div class="game-card">
-            <div class="game-icon" style="background: linear-gradient(135deg, #10B981, #059669);">🎮</div>
-            <h3>Viele weitere Spiele</h3>
-            <p>Von Casual bis Competitive – entdecke zahlreiche Spiele und finde deine Favoriten.</p>
+          <div class="game-card-flip" data-discord="https://discord.gg/starsunited">
+            <div class="game-card-inner">
+              <div class="game-card-front">
+                <div class="game-icon" style="background: linear-gradient(135deg, #10B981, #059669);">🎮</div>
+                <h3>Viele weitere Spiele</h3>
+                <p>Von Casual bis Competitive – entdecke zahlreiche Spiele und finde deine Favoriten.</p>
+              </div>
+              <div class="game-card-back">
+                <div class="discord-icon">💬</div>
+                <h3>Join our Discord!</h3>
+                <p>Entdecke alle unsere Spiele und Events</p>
+                <a href="https://discord.gg/starsunited" class="btn-discord" target="_blank">Jetzt beitreten</a>
+              </div>
+            </div>
           </div>
         </div>
         <div class="more-games">
@@ -170,7 +221,7 @@
         <div class="new-team-box">
           <h3>Dein Team fehlt?</h3>
           <p>Du führst ein Team oder möchtest eines gründen? Kontaktiere uns im Discord und wir nehmen dein Team auf!</p>
-          <a href="https://discord.gg/kEqdsF3UBM" class="btn btn-primary" target="_blank">Discord öffnen</a>
+          <a href="https://discord.gg/starsunited" class="btn btn-primary" target="_blank">Discord öffnen</a>
         </div>
       </div>
     </section>
@@ -209,7 +260,7 @@
         <div class="cta-box">
           <h3>Bereit, Teil von etwas Großartigem zu werden?</h3>
           <p>Schließe dich hunderten von Gamern an, die bereits Teil der StarsUnited-Familie sind.</p>
-          <a href="https://discord.gg/kEqdsF3UBM" class="btn btn-large" target="_blank">Jetzt Discord beitreten</a>
+          <a href="https://discord.gg/starsunited" class="btn btn-large" target="_blank">Jetzt Discord beitreten</a>
           <div class="status-indicators">
             <span class="indicator">🟢 500+ Online Mitglieder</span>
             <span class="indicator">🔵 Kostenlos & Offen</span>
@@ -230,7 +281,7 @@
             <div class="contact-icon">💬</div>
             <h3>Discord Server</h3>
             <p>Der schnellste Weg, uns zu erreichen! Chatte direkt mit dem Team und der Community.</p>
-            <a href="https://discord.gg/kEqdsF3UBM" class="btn btn-contact" target="_blank">Discord öffnen</a>
+            <a href="https://discord.gg/starsunited" class="btn btn-contact" target="_blank">Discord öffnen</a>
           </div>
           <div class="contact-card">
             <div class="contact-icon">📧</div>
@@ -257,6 +308,66 @@
         </div>
       </div>
     </section>
+
+    <!-- Impressum Section -->
+    <section id="impressum" class="impressum">
+      <div class="container">
+        <h2 class="section-title">Impressum</h2>
+        <div class="impressum-content">
+          <div class="impressum-section">
+            <h3>Angaben gemäß § 5 TMG</h3>
+            <p>
+              StarsUnited Gaming Community<br>
+              Musterstraße 123<br>
+              12345 Musterstadt<br>
+              Deutschland
+            </p>
+          </div>
+
+          <div class="impressum-section">
+            <h3>Kontakt</h3>
+            <p>
+              E-Mail: contact@starsunited.com<br>
+              Discord: <a href="https://discord.gg/starsunited" target="_blank">discord.gg/starsunited</a>
+            </p>
+          </div>
+
+          <div class="impressum-section">
+            <h3>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h3>
+            <p>
+              Max Mustermann<br>
+              Musterstraße 123<br>
+              12345 Musterstadt
+            </p>
+          </div>
+
+          <div class="impressum-section">
+            <h3>Haftungsausschluss</h3>
+            <h4>Haftung für Inhalte</h4>
+            <p>
+              Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.
+            </p>
+
+            <h4>Haftung für Links</h4>
+            <p>
+              Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen.
+            </p>
+
+            <h4>Urheberrecht</h4>
+            <p>
+              Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+            </p>
+          </div>
+
+          <div class="impressum-section">
+            <h3>Datenschutz</h3>
+            <p>
+              Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten erhoben werden, erfolgt dies stets auf freiwilliger Basis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
@@ -266,7 +377,7 @@
         <span class="footer-title">StarsUnited</span>
       </div>
       <p class="footer-tagline">Gemeinsam spielen, erschaffen und wachsen</p>
-      <p class="footer-copyright">© 2025 StarsUnited. Alle Rechte vorbehalten.</p>
+      <p class="footer-copyright">© 2025 StarsUnited. Alle Rechte vorbehalten. | <a href="#impressum" style="color: var(--text-muted); text-decoration: underline;">Impressum</a></p>
     </div>
   </footer>
 
