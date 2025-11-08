@@ -59,11 +59,11 @@ Danach ist deine Seite erreichbar unter:
 https://<username>.github.io/<repository>/
 ```
 
-## 👥 StarsUnited Community
+## [👥 StarsUnited Community](https://starsunited.github.io/starsunited/)
 
 Besuche unseren Discord:
 
-👉 **[https://discord.gg/kEqdsF3UBM](https://discord.gg/kEqdsF3UBM)**
+👉 [Discord](https://discord.gg/kEqdsF3UBM)
 
 Wir freuen uns auf dich! ✨
 
