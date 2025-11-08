@@ -71,6 +71,6 @@ Wir freuen uns auf dich! ✨
 
 ## 📄 Lizenz
 
-Dieses Projekt ist **Open Source** unter der MIT-Lizenz.
-Du kannst es frei nutzen, anpassen & weiterentwickeln.
+Dieses Projekt ist privat und nicht zur öffentlichen Nutzung, Weitergabe oder Veränderung freigegeben.
+Jegliche Nutzung, Vervielfältigung oder Weitergabe des Codes ist ohne ausdrückliche schriftliche Erlaubnis des Eigentümers verboten.
 
