@@ -1083,6 +1083,25 @@ section {
   text-decoration: underline;
 }
 
+.impressum-content ul {
+  margin: 1rem 0 1.5rem 1.5rem;  
+  padding-left: 1rem;
+  list-style: disc;
+}
+
+.impressum-content ul li {
+  color: var(--text-muted);
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Optional: Goldene Punkte */
+.impressum-content ul li::marker {
+  color: var(--primary-gold);
+  font-size: 1.2rem;
+}
+
 /* Footer */
 .footer {
   background: rgba(15, 23, 42, 0.8);
