@@ -112,6 +112,12 @@ body {
   font-size: 1.8rem;
 }
 
+.nav-brand .nav-logo {
+  height: 40px;   /* Größe anpassen */
+  width: auto;    /* Proportionen beibehalten */
+  display: block; 
+}
+
 .nav-links {
   display: none;
   list-style: none;
