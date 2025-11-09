@@ -2,77 +2,136 @@
 const teamsData = [
   {
     id: 1,
-    name: 'Clash Royale Elite',
+    name: 'SILVER STARS',
     game: 'Clash Royale',
     gameColor: '#3B82F6',
-    leader: 'EliteKing',
-    leaderTag: 'EliteKing#7891',
-    description: 'Wettbewerbsorientiertes Team mit fokus auf Turniere und Ladder-Erfolge. Wir trainieren täglich und unterstützen uns gegenseitig beim Erreichen höherer Trophen.',
-    achievement: 'Top 1000 Global',
-    members: 42,
+    leader: 'SILVER STARS',
+    leaderTag: 'SL│',
+    description:
+      'Mit einst 11 Clans haben wir über 500 Spielern ein Zuhause gegeben und die Top 10 in Deutschland gestürmt. Nach aktuellen Anpassungen konzentrieren wir uns derzeit auf Clanwar, Ladder und Casual-Clans. Du hast die Wahl und mit SILVER STARS die Vielfalt zum Erfolg.',
+    achievement: '',
+    members: 0,
     discordLink: 'https://discord.gg/starsunited'
   },
   {
     id: 2,
-    name: 'CoC Builders',
-    game: 'Clash of Clans',
-    gameColor: '#DC2626',
-    leader: 'BuildMaster',
-    leaderTag: 'BuildMaster#4521',
-    description: 'Strategisch denkender Clan mit Fokus auf Kriegserfolg und fortgeschrittene Bauplatzierung. Für erfahrene Spieler, die Clan Wars ernst nehmen.',
-    achievement: 'Crystal League II',
-    members: 58,
+    name: 'Strohhüte Royal',
+    game: 'Clash Royale',
+    gameColor: '#3B82F6',
+    leader: 'Strohhüte Royal',
+    leaderTag: 'SHR│',
+    description:
+      'Ahoi Piraten und willkommen an Bord! *Prost* Hier wird nicht geträumt, hier wollen wir Visionen verwirklichen! So entern wir zuerst eure Herzen und dann die Boote der Anderen.',
+    achievement: '',
+    members: 0,
     discordLink: 'https://discord.gg/starsunited'
   },
   {
     id: 3,
-    name: 'Brawl Team Stars',
-    game: 'Brawl Stars',
-    gameColor: '#F97316',
-    leader: 'StarChaser',
-    leaderTag: 'StarChaser#1234',
-    description: 'Casual und kompetitiv! Wir spielen alle Modi und helfen neuen Spielern, ihre Lieblings-Brawler zu meistern.',
-    achievement: 'Gold I',
-    members: 35,
+    name: 'PIG’Z and CHICK’Z',
+    game: 'Hay Day',
+    gameColor: '#10B981',
+    leader: 'PIG’Z and CHICK’Z',
+    leaderTag: 'PAC│',
+    description:
+      'Egal ob Früchte, Pflanzen, Tiere – unsere Crew ist richtig öko und logisch noch dazu! Lockere Gemeinde, für kleine Bauern bis hin zum „Derby“-Pro! Gegenseitige Hilfe mit Waren und Support. Traktor fahren ohne Führerschein möglich!',
+    achievement: '',
+    members: 0,
     discordLink: 'https://discord.gg/starsunited'
   },
   {
     id: 4,
-    name: 'E-Sports Champions',
-    game: 'E-Sports',
-    gameColor: '#FCD34D',
-    leader: 'ProLeader',
-    leaderTag: 'ProLeader#9876',
-    description: 'Unser kompetitives E-Sports-Team: League of Legends, Valorant und mehr. Wir nehmen an Turnieren teil und suchen motivierte Spieler!',
-    achievement: 'Regional Champion 2024',
-    members: 28,
+    name: 'Die FÜCHSE',
+    game: 'Hay Day',
+    gameColor: '#10B981',
+    leader: 'Die FÜCHSE',
+    leaderTag: 'DF│',
+    description:
+      'Unser Team ist in HayDay schon länger dabei. Im Derby punkten wir mit viel Verstand – als „CHAMPIONS“ sind alle dabei. Hast du Leidenschaft und Biss? Dann werde ein schlauer Fuchs in unserer herzlichen Community!',
+    achievement: '',
+    members: 0,
     discordLink: 'https://discord.gg/starsunited'
   },
   {
     id: 5,
-    name: 'Minecraft Creative',
-    game: 'Minecraft',
-    gameColor: '#10B981',
-    leader: 'BuilderPro',
-    leaderTag: 'BuilderPro#5555',
-    description: 'Zusammen erschaffen wir epische Welten! Von Survival bis Creative - hier kann jeder bauen und spielen.',
-    achievement: 'Creative Masters',
-    members: 67,
+    name: 'UNITED ULTRAS',
+    game: 'Brawl Stars',
+    gameColor: '#F97316',
+    leader: 'UNITED ULTRAS',
+    leaderTag: 'UϟU│',
+    description:
+      'Moin Brawler-Freunde! Bei uns findest du deinen Platz – egal ob Anfänger oder fortgeschritten. Das MegaPig wird IMMER voll gemacht. Wer nicht mithält, muss wieder gehen. Melde dich gerne für mehr Infos!',
+    achievement: '',
+    members: 0,
     discordLink: 'https://discord.gg/starsunited'
   },
   {
     id: 6,
-    name: 'Fortnite Squad',
-    game: 'Fortnite',
+    name: 'Royal Family',
+    game: 'Brawl Stars',
+    gameColor: '#F97316',
+    leader: 'Royal Family',
+    leaderTag: 'RYL│',
+    description:
+      'Engagement und Loyalität gegenüber unseren 5 Brawl Stars Clubs werden belohnt durch eine aktive Community und stets gefüllte MegaPigs. Egal ob Anfänger oder Profi – hier findet jeder seinen passenden Club!',
+    achievement: '',
+    members: 0,
+    discordLink: 'https://discord.gg/starsunited'
+  },
+  {
+    id: 7,
+    name: 'Juicy Crew',
+    game: 'Clash of Clans',
+    gameColor: '#DC2626',
+    leader: 'Juicy Crew',
+    leaderTag: 'JC│',
+    description:
+      'Wir sind fruchtig fresh dabei! Für alle unsere „COC“-Spieler organisieren wir saftiges Gameplay, das andere Clans sauer macht. Struktur, CWL-Erfolg und Spaß stehen bei uns ganz oben – werde Teil des Obstkorbs!',
+    achievement: '',
+    members: 0,
+    discordLink: 'https://discord.gg/starsunited'
+  },
+  {
+    id: 8,
+    name: 'FEY',
+    game: 'Clash of Clans',
+    gameColor: '#DC2626',
+    leader: 'FEY',
+    leaderTag: 'FEY│',
+    description:
+      'Tauche ein in die Welt von FEY – wo Leidenschaft für Gaming auf unendliche Energie trifft! Unser Clan wächst stetig und kämpft leidenschaftlich in CWL und Wars. Werde Teil unserer FEY-Familie!',
+    achievement: '',
+    members: 0,
+    discordLink: 'https://discord.gg/starsunited'
+  },
+  {
+    id: 9,
+    name: 'GET ON OUR LVL',
+    game: 'Clash of Clans',
+    gameColor: '#DC2626',
+    leader: 'GET ON OUR LVL',
+    leaderTag: 'GOL│',
+    description:
+      'Bist du bereit für das beste COC-Team? Respekt, Ehre und Teamgeist stehen bei uns ganz oben. Mit klaren Strukturen, schnellen Spenden und CW-Fokus bieten wir das perfekte Umfeld für motivierte Spieler!',
+    achievement: '',
+    members: 0,
+    discordLink: 'https://discord.gg/starsunited'
+  },
+  {
+    id: 10,
+    name: 'TLS',
+    game: 'Squad Busters',
     gameColor: '#7C3AED',
-    leader: 'VictorRoyale',
-    leaderTag: 'VictorRoyale#2022',
-    description: 'Skill-basiertes Team mit Fokus auf Arena, Turniere und neue Spieler. Trainingseinheiten wöchentlich!',
-    achievement: 'Champion League',
-    members: 44,
+    leader: 'TLS',
+    leaderTag: 'TLS│',
+    description:
+      'Führe eine vielfältige Truppe aus Helden in spannende Gefechte. Mit Können, Planung und Teamwork zerschlägst du rivalisierende Squads. Werde Teil der TLS-Geschichte in Squad Busters!',
+    achievement: '',
+    members: 0,
     discordLink: 'https://discord.gg/starsunited'
   }
 ];
+
 
 const defaultStats = {
   members: 500,
