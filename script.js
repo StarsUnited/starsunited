@@ -159,11 +159,9 @@ function createEnhancedStarfield() {
     starfieldContainer.appendChild(star);
   }
 
-  if (!isMobile) {
-    setInterval(() => {
+ setInterval(() => {
       createShootingStar();
     }, 3000 + Math.random() * 4000);
-  }
 }
 
 function createShootingStar() {
