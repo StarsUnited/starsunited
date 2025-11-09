@@ -82,7 +82,7 @@ body {
   left: 0;
   right: 0;
   z-index: 100;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(15, 23, 42, 0.911);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border-color);
 }
@@ -109,15 +109,15 @@ body {
 }
 
 .nav-logo {
-  height: 30px;   /* Größe anpassen */
-  width: auto;    /* Proportionen beibehalten */
+  height: 30px;
+  width: auto;
   display: block; 
   font-size: 1.8rem;
 }
 
 .nav-brand .nav-logo {
-  height: 30px;   /* Größe anpassen */
-  width: auto;    /* Proportionen beibehalten */
+  height: 30px;
+  width: auto;
   display: block; 
 }
 
