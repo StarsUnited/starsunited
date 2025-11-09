@@ -9,8 +9,8 @@ const teamsData = [
     leaderTag: 'SL│',
     description:
       'Mit einst 11 Clans haben wir über 500 Spielern ein Zuhause gegeben und die Top 10 in Deutschland gestürmt. Nach aktuellen Anpassungen konzentrieren wir uns derzeit auf Clanwar, Ladder und Casual-Clans. Du hast die Wahl und mit SILVER STARS die Vielfalt zum Erfolg.',
-    achievement: '',
-    members: 0,
+    achievement: 'Crystal League II',
+    members: 222,
     discordLink: 'https://discord.gg/starsunited'
   },
   {
@@ -22,8 +22,8 @@ const teamsData = [
     leaderTag: 'SHR│',
     description:
       'Ahoi Piraten und willkommen an Bord! *Prost* Hier wird nicht geträumt, hier wollen wir Visionen verwirklichen! So entern wir zuerst eure Herzen und dann die Boote der Anderen.',
-    achievement: '',
-    members: 0,
+    achievement: 'Crystal League II',
+    members: 222,
     discordLink: 'https://discord.gg/starsunited'
   },
   {
@@ -35,8 +35,8 @@ const teamsData = [
     leaderTag: 'PAC│',
     description:
       'Egal ob Früchte, Pflanzen, Tiere – unsere Crew ist richtig öko und logisch noch dazu! Lockere Gemeinde, für kleine Bauern bis hin zum „Derby“-Pro! Gegenseitige Hilfe mit Waren und Support. Traktor fahren ohne Führerschein möglich!',
-    achievement: '',
-    members: 0,
+    achievement: 'Crystal League II',
+    members: 222,
     discordLink: 'https://discord.gg/starsunited'
   },
   {
@@ -48,8 +48,8 @@ const teamsData = [
     leaderTag: 'DF│',
     description:
       'Unser Team ist in HayDay schon länger dabei. Im Derby punkten wir mit viel Verstand – als „CHAMPIONS“ sind alle dabei. Hast du Leidenschaft und Biss? Dann werde ein schlauer Fuchs in unserer herzlichen Community!',
-    achievement: '',
-    members: 0,
+    achievement: 'Crystal League II',
+    members: 222,
     discordLink: 'https://discord.gg/starsunited'
   },
   {
@@ -61,8 +61,8 @@ const teamsData = [
     leaderTag: 'UϟU│',
     description:
       'Moin Brawler-Freunde! Bei uns findest du deinen Platz – egal ob Anfänger oder fortgeschritten. Das MegaPig wird IMMER voll gemacht. Wer nicht mithält, muss wieder gehen. Melde dich gerne für mehr Infos!',
-    achievement: '',
-    members: 0,
+    achievement: 'Crystal League II',
+    members: 222,
     discordLink: 'https://discord.gg/starsunited'
   },
   {
@@ -74,8 +74,8 @@ const teamsData = [
     leaderTag: 'RYL│',
     description:
       'Engagement und Loyalität gegenüber unseren 5 Brawl Stars Clubs werden belohnt durch eine aktive Community und stets gefüllte MegaPigs. Egal ob Anfänger oder Profi – hier findet jeder seinen passenden Club!',
-    achievement: '',
-    members: 0,
+    achievement: 'Crystal League II',
+    members: 222,
     discordLink: 'https://discord.gg/starsunited'
   },
   {
@@ -87,8 +87,8 @@ const teamsData = [
     leaderTag: 'JC│',
     description:
       'Wir sind fruchtig fresh dabei! Für alle unsere „COC“-Spieler organisieren wir saftiges Gameplay, das andere Clans sauer macht. Struktur, CWL-Erfolg und Spaß stehen bei uns ganz oben – werde Teil des Obstkorbs!',
-    achievement: '',
-    members: 0,
+    achievement: 'Crystal League II',
+    members: 222,
     discordLink: 'https://discord.gg/starsunited'
   },
   {
@@ -100,8 +100,8 @@ const teamsData = [
     leaderTag: 'FEY│',
     description:
       'Tauche ein in die Welt von FEY – wo Leidenschaft für Gaming auf unendliche Energie trifft! Unser Clan wächst stetig und kämpft leidenschaftlich in CWL und Wars. Werde Teil unserer FEY-Familie!',
-    achievement: '',
-    members: 0,
+    achievement: 'Crystal League II',
+    members: 222,
     discordLink: 'https://discord.gg/starsunited'
   },
   {
@@ -113,8 +113,8 @@ const teamsData = [
     leaderTag: 'GOL│',
     description:
       'Bist du bereit für das beste COC-Team? Respekt, Ehre und Teamgeist stehen bei uns ganz oben. Mit klaren Strukturen, schnellen Spenden und CW-Fokus bieten wir das perfekte Umfeld für motivierte Spieler!',
-    achievement: '',
-    members: 0,
+    achievement: 'Crystal League II',
+    members: 222,
     discordLink: 'https://discord.gg/starsunited'
   },
   {
@@ -126,8 +126,8 @@ const teamsData = [
     leaderTag: 'TLS│',
     description:
       'Führe eine vielfältige Truppe aus Helden in spannende Gefechte. Mit Können, Planung und Teamwork zerschlägst du rivalisierende Squads. Werde Teil der TLS-Geschichte in Squad Busters!',
-    achievement: '',
-    members: 0,
+    achievement: 'Crystal League II',
+    members: 222,
     discordLink: 'https://discord.gg/starsunited'
   }
 ];
