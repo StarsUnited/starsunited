@@ -22,13 +22,27 @@ Diese Website präsentiert unsere Community, Spiele, Teams, Events und Kontaktm�
 
 ```
 / (root)
-│ index.html # Hauptseite
+│ index.html # Hauptseite (Landing Page)
 │ impressum.html # Impressum
 │ privacy.html # Datenschutzerklärung
 │ terms.html # Nutzungsbedingungen
-│ styles.css # Globales CSS
-│ script.js # Interaktive Logik & Team-System
+│ styles.css # Globale Styles
+│ script.js # Interaktive Logik + Team-Rendering
 │ README.md # Projektdokumentation
+│
+└── images/ # Logos & Team-Bilder
+fuchs.png
+GetonourLVL.png
+Juicy-Crew.png
+Mammutbaum_fey.png
+PigZandChickZ-1.png
+Royal-Family.png
+SilverStars_frei_ohne_R.png
+starsunited_logo_1.png
+starsunited_logo.png
+Strohhuete_Freigestellt.png
+TLS_Logo2.png
+UNITEDULTRAS.png
 ```
 
 
