@@ -109,14 +109,14 @@ body {
 }
 
 .nav-logo {
-  height: 40px;   /* Größe anpassen */
+  height: 30px;   /* Größe anpassen */
   width: auto;    /* Proportionen beibehalten */
   display: block; 
   font-size: 1.8rem;
 }
 
 .nav-brand .nav-logo {
-  height: 40px;   /* Größe anpassen */
+  height: 30px;   /* Größe anpassen */
   width: auto;    /* Proportionen beibehalten */
   display: block; 
 }
