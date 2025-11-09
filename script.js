@@ -5,6 +5,7 @@ const teamsData = [
     name: 'SILVER STARS',
     game: 'Clash Royale',
     gameColor: '#3B82F6',
+    image: "images/SilverStars_frei_ohne_R.png",
     leader: 'SILVER STARS',
     leaderTag: 'SL│',
     description:
@@ -18,6 +19,7 @@ const teamsData = [
     name: 'STROHHÜTE ROYAL',
     game: 'Clash Royale',
     gameColor: '#3B82F6',
+    image: "images/Strohhuete_Freigestellt.png",
     leader: 'STROHHÜTE ROYAL',
     leaderTag: 'SHR│',
     description:
@@ -31,6 +33,7 @@ const teamsData = [
     name: 'PIG’Z & CHICK’Z',
     game: 'Hay Day',
     gameColor: '#10B981',
+    image: "images/PigZandChickZ-1.png",
     leader: 'PIG’Z and CHICK’Z',
     leaderTag: 'PAC│',
     description:
@@ -44,6 +47,7 @@ const teamsData = [
     name: 'DIE FÜCHSE',
     game: 'Hay Day',
     gameColor: '#10B981',
+    image: "images/fuchs.png",
     leader: 'DIE FÜCHSE',
     leaderTag: 'DF│',
     description:
@@ -58,6 +62,7 @@ const teamsData = [
     game: 'Brawl Stars',
     gameColor: '#F97316',
     leader: 'UNITED ULTRAS',
+    image: "images/UNITEDULTRAS.png",
     leaderTag: 'UϟU│',
     description:
       'Moin Brawler-Freunde! Bei uns findest du deinen Platz – egal ob Anfänger oder fortgeschritten. Das MegaPig wird IMMER voll gemacht. Wer nicht mithält, muss wieder gehen. Melde dich gerne für mehr Infos!',
@@ -71,6 +76,7 @@ const teamsData = [
     game: 'Brawl Stars',
     gameColor: '#F97316',
     leader: 'ROYAL FAMILY',
+    image: "images/Royal-Family.png",
     leaderTag: 'RYL│',
     description:
       'Engagement und Loyalität gegenüber unseren 5 Brawl Stars Clubs werden belohnt durch eine aktive Community und stets gefüllte MegaPigs. Egal ob Anfänger oder Profi – hier findet jeder seinen passenden Club!',
@@ -85,6 +91,7 @@ const teamsData = [
     gameColor: '#DC2626',
     leader: 'JUICY CREW',
     leaderTag: 'JC│',
+    image: "images/Juicy-Crew.png",
     description:
       'Wir sind fruchtig fresh dabei! Für alle unsere „COC“-Spieler organisieren wir saftiges Gameplay, das andere Clans sauer macht. Struktur, CWL-Erfolg und Spaß stehen bei uns ganz oben – werde Teil des Obstkorbs!',
     achievement: 'Crystal League II',
@@ -96,6 +103,7 @@ const teamsData = [
     name: 'FEY',
     game: 'Clash of Clans',
     gameColor: '#DC2626',
+    image: "images/Mammutbaum_fey.png",
     leader: 'FEY',
     leaderTag: 'FEY│',
     description:
@@ -109,6 +117,7 @@ const teamsData = [
     name: 'GET ON OUR LVL',
     game: 'Clash of Clans',
     gameColor: '#DC2626',
+    image: "images/GetonourLVL.png",
     leader: 'GET ON OUR LVL',
     leaderTag: 'GOL│',
     description:
@@ -122,6 +131,7 @@ const teamsData = [
     name: 'TLS',
     game: 'Squad Busters',
     gameColor: '#7C3AED',
+    image: "images/TLS_Logo2.png",
     leader: 'TLS',
     leaderTag: 'TLS│',
     description:
@@ -134,7 +144,8 @@ const teamsData = [
   id: 11,
   name: 'StarsUnited MC',
   game: 'Minecraft',
-  gameColor: '#34D399', // Grün passend zu Minecraft
+  gameColor: '#34D399',
+  image: "images/TLS_Logo2.png",
   leader: 'Noch in Arbeit',
   leaderTag: 'COMING│SOON',
   description:
@@ -247,6 +258,8 @@ function renderTeams(filter = 'all') {
             ${team.game}
           </div>
         </div>
+
+        <img src="${team.image || ''}" alt="" class="team-image" />
       </div>
 
       <p class="team-description">${team.description}</p>
