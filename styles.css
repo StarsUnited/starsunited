@@ -1084,22 +1084,26 @@ section {
 }
 
 .impressum-content ul {
-  margin: 1rem 0 1.5rem 1.5rem;  
+  margin: 1rem 0 1.5rem 1.5rem;
   padding-left: 1rem;
-  list-style: disc;
 }
 
 .impressum-content ul li {
+  list-style: none;
+  position: relative;
+  padding-left: 1.3rem;
   color: var(--text-muted);
-  margin-bottom: 0.6rem;
-  font-size: 0.95rem;
   line-height: 1.6;
 }
 
-/* Optional: Goldene Punkte */
-.impressum-content ul li::marker {
-  color: var(--primary-gold);
-  font-size: 1.2rem;
+.impressum-content ul li::before {
+  content: "★";
+  position: absolute;
+  left: 0;
+  top: 0.15rem;
+  color: var(--primary-blue);
+  text-shadow: 0 0 8px rgba(59, 130, 246, 0.7);
+  font-size: 0.9rem;
 }
 
 /* Footer */
