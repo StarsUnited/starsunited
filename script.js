@@ -129,7 +129,20 @@ const teamsData = [
     achievement: 'Crystal League II',
     members: 222,
     discordLink: 'https://discord.gg/starsunited'
-  }
+  },
+  {
+  id: 11,
+  name: 'StarsUnited MC',
+  game: 'Minecraft',
+  gameColor: '#34D399', // Grün passend zu Minecraft
+  leader: 'Noch in Arbeit',
+  leaderTag: 'COMING│SOON',
+  description:
+    'Unser Minecraft-Projekt befindet sich aktuell in der Entwicklung! Freue dich auf spannende Welten, Community-Events, Survival-Abenteuer und kreative Projekte. Sei einer der Ersten, der den offiziellen StarsUnited Minecraft-Bereich entdeckt!',
+  achievement: 'In Entwicklung',
+  members: 0,
+  discordLink: 'https://discord.gg/starsunited'
+}
 ];
 
 
