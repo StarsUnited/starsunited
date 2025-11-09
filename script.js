@@ -15,10 +15,10 @@ const teamsData = [
   },
   {
     id: 2,
-    name: 'Strohhüte Royal',
+    name: 'STROHHÜTE ROYAL',
     game: 'Clash Royale',
     gameColor: '#3B82F6',
-    leader: 'Strohhüte Royal',
+    leader: 'STROHHÜTE ROYAL',
     leaderTag: 'SHR│',
     description:
       'Ahoi Piraten und willkommen an Bord! *Prost* Hier wird nicht geträumt, hier wollen wir Visionen verwirklichen! So entern wir zuerst eure Herzen und dann die Boote der Anderen.',
@@ -28,7 +28,7 @@ const teamsData = [
   },
   {
     id: 3,
-    name: 'PIG’Z and CHICK’Z',
+    name: 'PIG’Z & CHICK’Z',
     game: 'Hay Day',
     gameColor: '#10B981',
     leader: 'PIG’Z and CHICK’Z',
@@ -41,10 +41,10 @@ const teamsData = [
   },
   {
     id: 4,
-    name: 'Die FÜCHSE',
+    name: 'DIE FÜCHSE',
     game: 'Hay Day',
     gameColor: '#10B981',
-    leader: 'Die FÜCHSE',
+    leader: 'DIE FÜCHSE',
     leaderTag: 'DF│',
     description:
       'Unser Team ist in HayDay schon länger dabei. Im Derby punkten wir mit viel Verstand – als „CHAMPIONS“ sind alle dabei. Hast du Leidenschaft und Biss? Dann werde ein schlauer Fuchs in unserer herzlichen Community!',
@@ -67,10 +67,10 @@ const teamsData = [
   },
   {
     id: 6,
-    name: 'Royal Family',
+    name: 'ROYAL FAMILY',
     game: 'Brawl Stars',
     gameColor: '#F97316',
-    leader: 'Royal Family',
+    leader: 'ROYAL FAMILY',
     leaderTag: 'RYL│',
     description:
       'Engagement und Loyalität gegenüber unseren 5 Brawl Stars Clubs werden belohnt durch eine aktive Community und stets gefüllte MegaPigs. Egal ob Anfänger oder Profi – hier findet jeder seinen passenden Club!',
@@ -80,10 +80,10 @@ const teamsData = [
   },
   {
     id: 7,
-    name: 'Juicy Crew',
+    name: 'JUICY CREW',
     game: 'Clash of Clans',
     gameColor: '#DC2626',
-    leader: 'Juicy Crew',
+    leader: 'JUICY CREW',
     leaderTag: 'JC│',
     description:
       'Wir sind fruchtig fresh dabei! Für alle unsere „COC“-Spieler organisieren wir saftiges Gameplay, das andere Clans sauer macht. Struktur, CWL-Erfolg und Spaß stehen bei uns ganz oben – werde Teil des Obstkorbs!',
